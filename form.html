@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title name="pagetitle">Kurt Thirtyacre</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <script src="js/jquery-3.2.1.js"></script>
+  <script src="js/scripts.js"></script>
+  <link rel="icon" href="img/favicon.ico">
+</head>
+<div class="navbar">
+    <img href="index.html" class="navpic" src="img/k30.jpg"></p>
+    <h1 class="headkt">
+      <strong>Kurt Thirtyacre</strong>
+    </h1>
+    <div class="menu">
+      <div class ="home">
+          <a href="form.html" style="color: black;" class="btn-home">Contact</a>
+      </div>
+      <div class="dropdown-design">
+        <button class="dropbtn-design">Design</button>
+        <div class="dropdown-content-design">
+          <h3><a href="design/alteration.html">Something 1</a></h3>
+          <h3><a href="design/dataviz.html">Something 2</a></h3>
+          <h3><a href="design/graphics.html">Something 3</a></h3>
+          <h3><a href="design/test.html">Something 4</a></h3>
+          <h3><a href="design/tableau.html">Something 5</a></h3>
+          <h3><a href="design/web-design.html">Something 6</a></h3>
+        </div>
+      </div>
+      <div class="dropdown-news">
+        <button class="dropbtn-news">News</button>
+        <div class="dropdown-content-news">
+          <h3><a href="design/alteration.html">Alteration</a></h3>
+          <h3><a href="design/dataviz.html">Data Visualization</a></h3>
+          <h3><a href="design/graphics.html">Graphic Design</a></h3>
+          <h3><a href="design/test.html">Photography</a></h3>
+          <h3><a href="design/tableau.html">Tableau</a></h3>
+          <h3><a href="design/web-design.html">Web Design</a></h3>
+        </div>
+      </div>
+      <div class ="home">
+          <a href="index.html" style="color: black;" class="btn-home">Home</a>
+      </div>
+    </div>
+  </div>
+<div class="container">
+  <body>
+    <form id="pixels">
+      <label for="flname">Name</label>
+      <input id="flname" class="form-control" type="text" maxlength="35" title="Format: ####-#" name="flname" placeholder="First & Last Name" value="" required autofocus><br>
+      <label for="email">Email</label>
+      <input id="email" class="form-control" type="text" maxlength="128 "name="txtType" placeholder="email@example.com" onkeypress="return NoSpace(event)"><br>
+      <label id="label-app" for="app">Reason</label>
+      <select id="app" class="form-control" name="txtApp" onkeypress="return NoSpace(event)"><br>
+        <option value="selectReason" selected><i>Select a Reason</i></option>
+        <option value="jobOpportunity">Job Opportunity</option>
+        <option value="requestServices">Service Request</option>
+        <option value="requestSamples">Request Sample Work</option>
+        <option value="other">Other</option>
+      </select><br>
+      <label for="details">Details</label>
+      <input id="customdata" class="form-control" type="text" maxlength="256" name="txtCustomData" placeholder="Please add details" onkeypress="return NoSpace(event)"><br>
+        <div class="generatePixels">
+        <button id="submitForm" type="submit" class="btn" align="left">Submit</button>
+      </div>
+      <!-- Staging Pixel :<input type="text" class="form-control" name="txtStagePixel">
+      Prod Pixel : <input type="text" class="form-control" name="txtProdPixel">  -->
+    </form>
+    <div id="final">
+      <p id="pix-gen">
+        Staging Pixel: &lt;img src=&quot;https://staging-pt.ispot.tv/v2/TC-<span class="siteid"></span>.gif?<span class="qstring"></span>&quot; style=&quot;border:0&quot; alt=&quot;&quot; /&gt;<br>
+        Prod Pixel: &lt;img src=&quot;https://pt.ispot.tv/v2/TC-<span class="siteid"></span>.gif?<span class="qstring"></span>&quot; style=&quot;border:0&quot; alt=&quot;&quot; /&gt;<br>
+      </p>
+    </div>
+  </body>
+</div>
+</html>
